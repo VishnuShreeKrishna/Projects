@@ -2,3 +2,38 @@
     margin: 0;
     padding: 0;
 }
+nav{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #baaeae;
+}
+nav a{
+    border: solid black 2px;
+    padding: 10px;
+    border-radius: 10px;
+
+    
+
+}
+span{
+    display: block;
+}
+.button{
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+#orange{
+    background: #fdbc43;
+}
+#white{
+    background: #ffffff;
+}
+#green{
+    background: #3aed3a;
+}
+#yellow{
+    background: #ffff00;
+}
