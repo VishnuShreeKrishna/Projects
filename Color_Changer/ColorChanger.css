@@ -9,21 +9,16 @@ nav{
     background-color: #baaeae;
 }
 nav a{
-    border: solid black 2px;
+    border: solid #948c8c 2px;
     padding: 10px;
     border-radius: 10px;
-
-    
-
-}
-span{
-    display: block;
 }
 .button{
-    width: 100px;
+    width: 200px;
     height: 100px;
-    border: solid black 2px;
+    border: solid #c2bcbc 2px;
     display: inline-block;
+    
 }
 #orange{
     background: #fdbc43;
@@ -36,4 +31,7 @@ span{
 }
 #yellow{
     background: #ffff00;
+}
+span{
+    display: block;
 }
