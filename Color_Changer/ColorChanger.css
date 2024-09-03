@@ -20,6 +20,18 @@ nav a{
     display: inline-block;
     
 }
+.orange{
+    background: #fdbc43;
+}
+.white{
+    background: #ffffff;
+}
+.green{
+    background: #3aed3a;
+}
+.yellow{
+    background: #ffff00;
+}
 #orange{
     background: #fdbc43;
 }
