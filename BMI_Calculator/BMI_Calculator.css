@@ -17,16 +17,33 @@ nav a{
     font-weight: bold;
 }
 body{
-    background-color: #bcbcb8;
+    background-color: #636361;
 }
 .container {
+    padding: 25px;
+    width: 50%;
     margin: 10px;
-    padding: 20px;
-    background-color: #797978;
+    background-color: #adad9f;
     border-radius: 10px;
+    text-align: center;
+    justify-items: center;
 }
 .container h1{
     padding: 10px;
     margin: 10px;
+    text-align: center;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#height, #weight{
+    width: 180px;
+    height: 23px;
+    padding: 5px;
+    font-size: 21px;
+    margin-bottom: 25px;
+    border-radius: 8px;
 }
 
