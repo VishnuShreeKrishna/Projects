@@ -10,5 +10,7 @@ form.addEventListener('submit', (e)=>{
         weight.innerHTML = `Please give a valid weight. the weight provided by you ${weight} is not valid.`;
     }else{
         result.innerHTML = ((weight)/((height*height )/10000));
+        document.querySelector('#height').value=""
+        document.querySelector('#weight').value=""
     }
 })
