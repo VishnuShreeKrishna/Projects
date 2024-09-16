@@ -21,12 +21,12 @@ nav a{
 }
 .container {
     padding: 25px;
-    width: 50%;
+    width: auto;
+
     margin: 10px;
     background-color: #adad9f;
     border-radius: 10px;
     text-align: center;
-    
 }
 .container h1{
     padding: 10px;
@@ -45,6 +45,9 @@ label{
     font-size: 21px;
     margin-bottom: 25px;
     border-radius: 8px;
+    box-shadow: 4px 4px #91918e;
+    background: #ffffff00;
+
 }
 button{
     font-size: medium;
@@ -52,6 +55,13 @@ button{
     padding: 10px;
     width: 100px;
     margin-bottom: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 8px;
+    box-shadow: 4px 4px #91918e;
 }
+#result{
+    margin-bottom: 10px;
+    font-weight: bolder;
+color: #0c65ff;
+}
+
