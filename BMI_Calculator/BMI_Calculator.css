@@ -20,9 +20,12 @@ nav a{
     font-weight: bold;
 }
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 25px;
-    width: auto;
-
+    width: 50%;
     margin: 10px;
     background-color: #adad9f;
     border-radius: 10px;
