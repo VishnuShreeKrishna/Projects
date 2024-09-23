@@ -20,16 +20,28 @@ nav a{
     font-weight: bold;
 }
 .allCentre{
+    margin: 15px;
     height: 80vh;
     display: flex;
+    width: 70vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: large;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 70%;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.285);
     /* background-color: #e74343; */
+}
+#banner{
+    padding: 10px;
 }
 #clock{
     padding: 20px;
     width: 70px;
+    border: 2px solid black;
     border-radius: 10px;
-    background-color: #6ea3f8;
+    background-color: #ffffff42;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.365);
 }
