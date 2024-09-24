@@ -19,6 +19,12 @@ nav a{
     text-decoration: none;
     font-weight: bold;
 }
+.centre{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .allCentre{
     margin: 15px;
     height: 80vh;
@@ -29,7 +35,7 @@ nav a{
     align-items: center;
     font-size: large;
     font-weight: bolder;
-    border: 2px solid black;
+    border: 5px solid black;
     border-radius: 70%;
     box-shadow: 15px 15px rgba(0, 0, 0, 0.285);
     /* background-color: #e74343; */
