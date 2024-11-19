@@ -5,6 +5,13 @@
 }
 body {
     background-color: #48A30012;
-    font-family: 'Popins', sans-serif;
+    font-family: "Popins", sans-serif;
 
+}
+.heading{
+    color: #48A300;
+    text-align: center;
+}
+.heading span{
+    color: #61481C;
 }
