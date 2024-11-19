@@ -8,19 +8,53 @@ body {
     font-family: "Popins", sans-serif;
 
 }
-.heading{
+main{
+    padding: 10px;
+}
+.title{
     color: #48A300;
     text-align: center;
 }
-.heading span{
+.title span{
     color: #61481C;
-}
+}   
 .app-container{
     background-color: #FBFBFB;
     margin-inline: auto;
     border-radius: 5px;
     padding: 32px  42px;
-    max-width: 660px;
-    height: 810px;
+    max-width: 460px;
+    height: 510px;
+    box-shadow: 0 0 8px 0px #02020033;
     
+}
+.subtitle{
+    
+}
+.sun-icon{
+    vertical-align: middle;
+    margin-left: 16px;
+}
+@media (max-width: 768px){
+    .title{
+        font-size: 20px;
+    }
+    .app-container{
+        background-color: #FBFBFB;
+        margin-inline: auto;
+        border-radius: 3px;
+        padding: 20px  30px;
+        max-width: 330px;
+        height: 510px;
+        box-shadow: 0 0 8px 0px #02020033;
+        
+    }
+    .subtitle{
+        font-size: medium;
+    }
+    .sun-icon{
+        height: 25px;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
 }
