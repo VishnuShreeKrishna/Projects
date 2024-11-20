@@ -43,14 +43,16 @@ main{
 }
 .progress-bar{
     background-color: #48A3001A;
-    height: 30px;
+    height: 25px;
     border-radius: 15px;
 }
 .progress-value{
     background-color: #48A300;
     height: 100%;
-    width: 60%;
+    width: 66%;
     border-radius: 15px;
+    font-weight: 500;
+    color: #EEFFE0;
 }
 @media (max-width: 768px){
     .title{
@@ -82,7 +84,7 @@ main{
     }
     .progress-bar{
         background-color: #48A3001A;
-        height: 20px;
+        height: 15px;
     }
     .progress-value{
         border-radius: 15px;
