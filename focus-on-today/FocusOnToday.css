@@ -29,11 +29,28 @@ main{
     
 }
 .subtitle{
-    
+    font-weight: 800;
 }
 .sun-icon{
     vertical-align: middle;
     margin-left: 16px;
+}
+.progress-label{
+    color: #858585;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.progress-bar{
+    background-color: #48A3001A;
+    height: 30px;
+    border-radius: 15px;
+}
+.progress-value{
+    background-color: #48A300;
+    height: 100%;
+    width: 60%;
+    border-radius: 15px;
 }
 @media (max-width: 768px){
     .title{
@@ -56,5 +73,18 @@ main{
         height: 25px;
         vertical-align: middle;
         margin-left: 5px;
+    }
+    .progress-label{
+        color: #858585;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    .progress-bar{
+        background-color: #48A3001A;
+        height: 20px;
+    }
+    .progress-value{
+        border-radius: 15px;
     }
 }
