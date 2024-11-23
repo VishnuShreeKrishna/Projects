@@ -72,6 +72,9 @@ main{
     display: none;
     
 }
+.show-error .error-label{
+    display: block;
+}
 
 .goal-container{
     margin-bottom: 32px;
