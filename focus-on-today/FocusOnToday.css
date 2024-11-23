@@ -52,15 +52,18 @@ main{
 .progress-value{
     display: flex;
     align-items: center;
-    padding-left: 20px;
     background-color: #48A300;
     height: 100%;
     font-size: 15px;
-    width: 66%;
+    width: 0%;
     border-radius: 15px;
     font-weight: 500;
     color: #EEFFE0;
+    overflow: hidden;
+}
 
+.progress-value span{
+    padding-left: 20px;
 }
 .error-label{
     /* padding: 8px; */
