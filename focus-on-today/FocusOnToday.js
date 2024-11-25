@@ -5,6 +5,8 @@ const progressBar = document.querySelector('.progress-bar')
 const progressValue = document.querySelector('.progress-value')
 
 
+const AllGoals = {}
+
 
 checkBoxList.forEach((checkbox) => {
     checkbox.addEventListener('click', (event)=>{
