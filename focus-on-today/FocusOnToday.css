@@ -60,6 +60,7 @@ main{
     font-weight: 500;
     color: #EEFFE0;
     overflow: hidden;
+    transition: width 1s ease-in-out;
 }
 
 .progress-value span{
