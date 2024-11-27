@@ -6,6 +6,8 @@ const progressValue = document.querySelector('.progress-value')
 
 
 const allGoals = JSON.parse(localStorage.getItem('allGoals'))||{}
+let completedGoalsCount = Object.values(allGoals).filter((goal)=>goal.completed).length
+progressValue.style.width = `${completedGoalsCount/3*100}%`
 
 
 checkBoxList.forEach((checkbox) => {
@@ -13,10 +15,13 @@ checkBoxList.forEach((checkbox) => {
         const allGoalsAdded = [...inputfields].every(function (input){
             return input.value
         })
-
         if(allGoalsAdded){
             checkbox.parentElement.classList.toggle('completed')
-            progressValue.style.width = '33.33%'
+            const inputId = checkbox.nextElementSibling.id
+            allGoals[inputId].completed =! allGoals[inputId].completed
+            completedGoalsCount = Object.values(allGoals).filter((goal)=>goal.completed).length
+            progressValue.style.width = `${completedGoalsCount/3*100}%`
+            localStorage.setItem('allGoals', JSON.stringify(allGoals))
         } else{
            progressBar.classList.add('show-error')
         }
@@ -28,9 +33,14 @@ inputfields.forEach((input) => {
         progressBar.classList.remove('show-error');
     })
     input.addEventListener('input', (e) =>{
-        allGoals[input.id] = input.value
-        localStorage.setItem('allGoals', JSON.stringify(allGoals))
-        
-        
+        allGoals[input.id] = {
+            name: input.value,
+            completed: false,
+        }
+        localStorage.setItem('allGoals', JSON.stringify(allGoals))    
     })
+    input.value = allGoals[input.id].name
+    if(allGoals[input.id].completed){
+        input.parentElement.classList.add('completed')
+    }
 })
