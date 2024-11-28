@@ -14,7 +14,7 @@ const allQuotes = [
 
 const allGoals = JSON.parse(localStorage.getItem('allGoals'))||{}
 let completedGoalsCount = Object.values(allGoals).filter((goal)=>goal.completed).length
-progressValue.style.width = `${completedGoalsCount/3*100}%`
+progressValue.style.width = `${completedGoalsCount/inputfields.length*100}%`
 localStorage.setItem('allGoals', JSON.stringify(allGoals))
 progressLabel.innerText = allQuotes[completedGoalsCount]
 
@@ -30,8 +30,8 @@ checkBoxList.forEach((checkbox) => {
             const inputId = checkbox.nextElementSibling.id
             allGoals[inputId].completed =! allGoals[inputId].completed
             completedGoalsCount = Object.values(allGoals).filter((goal)=>goal.completed).length
-            progressValue.style.width = `${completedGoalsCount/3*100}%`
-            progressValue.firstElementChild.innerText = `${completedGoalsCount}/3 Completed`
+            progressValue.style.width = `${completedGoalsCount/inputfields.length*100}%`
+            progressValue.firstElementChild.innerText = `${completedGoalsCount}/${inputfields.length} Completed`
             localStorage.setItem('allGoals', JSON.stringify(allGoals))
             progressLabel.innerText = allQuotes[completedGoalsCount]
         } else{
@@ -49,13 +49,18 @@ inputfields.forEach((input) => {
             e.target.value = allGoals[input.id].name
             return
         }
-        allGoals[input.id] = {
-            name: input.value,
-            completed: false,
-        }
+        allGoals[input.id].name = input.value;
         localStorage.setItem('allGoals', JSON.stringify(allGoals))    
     })
-    input.value = allGoals[input.id].name
+    if(allGoals[input.id]) {
+        input.value = allGoals[input.id].name
+    } else{
+        allGoals[input.id] ={
+            name: '',
+            completed: false,
+        }
+        
+    }
     if(allGoals[input.id].completed){
         input.parentElement.classList.add('completed')
     }
