@@ -65,3 +65,4 @@ inputfields.forEach((input) => {
         input.parentElement.classList.add('completed')
     }
 })
+
