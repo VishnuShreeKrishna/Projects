@@ -40,6 +40,7 @@ padding: 0 25px;
     margin-top: 90px;
 }
 .img-container{
+    
     margin-top: 100px;
     max-width: 1290px;
     margin: 0px auto;
@@ -50,4 +51,12 @@ padding: 0 25px;
     font-weight: 400;
     font-size: 20px;
 }
-
+.section {
+    margin-top: 100px;
+}
+.section h2{
+    font-size: 37px;
+    color: #492118;
+    font-weight: 700;
+    text-align: center;
+}
