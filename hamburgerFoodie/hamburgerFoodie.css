@@ -12,9 +12,42 @@ a{
     color: inherit;
 }
 header{
-    padding: 24px 48px;
+    padding: 24px 32px;
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+nav{
+    display: flex;
+    /* gap: 60px; */
+}
+nav a{
+    font-weight: 700;
+    font-size: 18px;
+    color: #492118;
+}
+nav a+a{
+    margin-left: 60px;
+}
+img{
+    width: 100%;
+}
+main{
+padding: 0 25px;
+}
+.hero-section{
+    margin-top: 90px;
+}
+.img-container{
+    margin-top: 100px;
+    max-width: 1290px;
+    margin: 0px auto;
+}
+.hero-section p{
+    text-align: center;
+    color: #492118;
+    font-weight: 400;
+    font-size: 20px;
+}
+
