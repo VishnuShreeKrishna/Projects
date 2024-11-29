@@ -2,6 +2,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -51,8 +54,13 @@ padding: 0 25px;
     font-weight: 400;
     font-size: 20px;
 }
-.section {
-    margin-top: 100px;
+.section{
+    margin-top: 130px;
+}
+.section .img-container{
+    height: 50%;
+    max-width: 800px;
+    background-color: #0b0909;
 }
 .section h2{
     font-size: 37px;
