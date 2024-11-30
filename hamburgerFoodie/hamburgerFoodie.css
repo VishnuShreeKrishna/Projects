@@ -55,7 +55,7 @@ padding: 0 25px;
     font-size: 20px;
 }
 .section{
-    margin-top: 130px;
+    margin-top: 100px;
 }
 .section .img-container{
     height: 50%;
@@ -67,4 +67,12 @@ padding: 0 25px;
     color: #492118;
     font-weight: 700;
     text-align: center;
+}
+.go-to-top{
+    text-align: right;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.go-to-top a{
+    text-decoration: underline;
 }
