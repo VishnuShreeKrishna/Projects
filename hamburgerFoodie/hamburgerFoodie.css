@@ -48,14 +48,13 @@ nav a+a{
 }
 .hamburger-menu{
     display: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    width: 100px;
 }
 .hamburger-icon{
+    padding: 5px 0px;
     font-size: 38px;
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
 }
 img{
     width: 100%;
@@ -148,8 +147,19 @@ main{
     }
     .hamburger-menu{
         display: block;
-        background: #fff;
-        
+        display: flex;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        border-bottom-left-radius: 100%;
+        background: #fff;    
+    }
+    .hamburger-menu-container{
+        overflow: hidden;
+        position: relative;
+        height: 100px;
+        width: 100px;
     }
     .hero-section{
         margin-top: 20px;
