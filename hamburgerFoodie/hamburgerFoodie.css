@@ -46,7 +46,17 @@ nav a{
 nav a+a{
     margin-left: 60px;
 }
-
+.hamburger-menu{
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
+.hamburger-icon{
+    font-size: 38px;
+}
 img{
     width: 100%;
 }
@@ -82,7 +92,7 @@ main{
     text-align: center;
 }
 .go-to-top{
-    padding: 50px 80px;
+    padding: 50px 50px;
     text-align: right;
     max-width: 960px;
     margin: 0 auto;
@@ -132,9 +142,14 @@ main{
     .close-icon{
         display: block;
     }
-    nav a+a{
+    nav a+a {
         margin: 0px;
         margin-top: 16px;
+    }
+    .hamburger-menu{
+        display: block;
+        background: #fff;
+        
     }
     .hero-section{
         margin-top: 20px;
@@ -147,6 +162,9 @@ main{
     }
     .section h2{
         font-size: 14px;
+    }
+    .go-to-top{
+        padding: 50px 5px;
     }
 }
 
