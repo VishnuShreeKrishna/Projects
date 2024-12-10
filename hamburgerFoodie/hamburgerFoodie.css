@@ -26,7 +26,6 @@ header{
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 100px;
 }
 nav{
     display: flex;
@@ -54,7 +53,7 @@ nav a+a{
     padding: 5px 0px;
     font-size: 38px;
     position: absolute;
-    left: 50px;
+    left: 35px;
     cursor: pointer;
 }
 img{
@@ -130,6 +129,9 @@ main{
     header{
         background-color: #f6f0ebc8;
         backdrop-filter: blur(8px);
+    }   `                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    .header-content{
+        max-height: 90px;
     }
     nav{
         position: absolute;
@@ -142,6 +144,7 @@ main{
     }
     .close-icon{
         display: block;
+        cursor: pointer;
     }
     nav a+a {
         margin: 0px;
@@ -151,8 +154,8 @@ main{
         /* padding-right: 2%; */
         display: block;
         display: flex;
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 70px;
         position: absolute;
         border-bottom-left-radius: 100%;
         background: #fff;    
@@ -160,8 +163,8 @@ main{
     .hamburger-menu-container{
         overflow: hidden;
         position: relative;
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 70px;
     }
     .hero-section{
         margin-top: 20px;
