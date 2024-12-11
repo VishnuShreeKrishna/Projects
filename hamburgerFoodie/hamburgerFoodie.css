@@ -2,14 +2,15 @@
 *{
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F6F0EB;
+}
+.main-containt{
     overflow-x: hidden;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration-line: none;
@@ -190,5 +191,9 @@ main{
     .menu-open .hamburger-menu-container{
         display: none;
     }
+    /* .logo{
+        height: 7%;
+        width: 7%;
+    } */
 }
 
