@@ -9,6 +9,7 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F6F0EB;
+    overflow-x: hidden;
 }
 a{
     text-decoration-line: none;
@@ -129,18 +130,19 @@ main{
     header{
         background-color: #f6f0ebc8;
         backdrop-filter: blur(8px);
-    }   `                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    }                                          
     .header-content{
         max-height: 90px;
     }
     nav{
         position: absolute;
-        right: 25px;
-        top: 25px; 
+        right: -150px;
+        top: 10px; 
         background-color: #ffffffe7;
         flex-direction: column;
         padding: 15px;
-        display: none;
+        transition: right 0.8s ease-in-out;
+        /* display: none; */
     }
     .close-icon{
         display: block;
@@ -183,6 +185,7 @@ main{
     }
     .menu-open nav{
         display: flex;
+        right: 25px;
     }
     .menu-open .hamburger-menu-container{
         display: none;
