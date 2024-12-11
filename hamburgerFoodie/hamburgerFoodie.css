@@ -29,6 +29,10 @@ header{
     max-width: 1200px;
     margin: 0 auto;
 }
+.logo{
+    height: 9%;
+    width: 9%;
+}
 nav{
     display: flex;
     /* gap: 60px; */
@@ -133,7 +137,7 @@ main{
         backdrop-filter: blur(8px);
     }                                          
     .header-content{
-        max-height: 90px;
+        max-height: 70px;
     }
     nav{
         position: absolute;
@@ -191,9 +195,6 @@ main{
     .menu-open .hamburger-menu-container{
         display: none;
     }
-    /* .logo{
-        height: 7%;
-        width: 7%;
-    } */
+    
 }
 
