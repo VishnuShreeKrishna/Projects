@@ -1,16 +1,19 @@
-const popup = document.querySelector('.popup-container')
 const btn = document.querySelector('button')
 const closeicon = document.querySelector('.close-icon');
-const overLay = document.querySelector('.overlay');
+const popupContainer = document.querySelector('.popup-container');
+const popup = document.querySelector('.popup');
 
 
 btn.addEventListener('click', () => {
-    popup.classList.add('popup-open')
+    popupContainer.classList.add('popup-open')
 })
 
 closeicon.addEventListener('click', () => {
-    popup.classList.remove('popup-open')
+    popupContainer.classList.remove('popup-open')
 })
-overLay.addEventListener('click', () => {
-    popup.classList.remove('popup-open')
+popupContainer.addEventListener('click', () => {
+    popupContainer.classList.remove('popup-open')
+})
+popup.addEventListener('click', (e) => {
+    e.stopPropagation()
 })
