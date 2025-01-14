@@ -1,0 +1,3 @@
+* {
+    box-sizing: boder-box;
+}
