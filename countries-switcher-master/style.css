@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 body{
     margin: 0;
@@ -39,7 +39,7 @@ a{
 .country-card{
     padding: 5px;
     padding-bottom: 25px;
-    width: 20%;
+    width: 220px;
     border-radius: 10px;
     box-shadow: 0 0 10px #0000004d;
     overflow: hidden;
