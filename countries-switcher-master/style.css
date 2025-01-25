@@ -4,13 +4,16 @@
 body{
     margin: 0;
     font-family: Nunito, sans-serif;
-    background-color: #cfc8c8;
+    /* background-color: #cfc8c8; */
 }
 .title{
     font-weight: 700;
 }
 .header-container{
     position: sticky;
+    top: 0;
+    z-index: 2 ;
+    background-color: white;
     box-shadow: 0px 4px 14px #0000004d;
 }
 .header-content{
@@ -36,6 +39,7 @@ a{
     gap: 18px;
     flex-wrap: wrap;
     justify-content: space-between;
+    scroll-behavior: smooth;
 }
 .country-card{
     padding: 5px;
