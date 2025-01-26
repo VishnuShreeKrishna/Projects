@@ -28,6 +28,7 @@ main{
     padding: 25px;
 }
 a{
+    cursor: pointer;
     text-decoration-line: none;
     color: inherit;
 }
