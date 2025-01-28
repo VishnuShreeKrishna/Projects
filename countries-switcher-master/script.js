@@ -9,7 +9,7 @@ fetch('https://restcountries.com/v3.1/all')
             const population = new Intl.NumberFormat('en-IN').format(`${country.population}`);
             Countrycardanchor.innerHTML = `
                 <div class="country-card">
-                    <img src="${country.flags.svg}" alt="flag">
+                    <img src="${country.flags.svg}" alt="${country.name.common} flag">
                     <div class="card-text">
                         <h3 class="card-title">${country.name.common}</h3>
                         <p><b>Population: </b>${population}</p>

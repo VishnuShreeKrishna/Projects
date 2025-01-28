@@ -3,3 +3,22 @@
     border-radius: 5px;
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.573);
 }
+.country-details{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.country-details img{
+    margin-top: 40px;
+    width: 400px;
+}
+.details-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 160px;
+    flex-wrap: wrap;
+}
+.details-text p{
+    margin: 0;
+}
