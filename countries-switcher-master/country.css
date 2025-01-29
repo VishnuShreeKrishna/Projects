@@ -2,23 +2,47 @@
     padding: 8px 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.573);
+    position: sticky;
+    top: 90px;
 }
 .country-details{
     display: flex;
     align-items: center;
+    /* justify-content: center; */
     gap: 30px;
+    margin-top: 100px;
+    /* background-color: #ca6868; */
 }
 .country-details img{
-    margin-top: 40px;
-    width: 400px;
+    width: 40%;
 }
 .details-text{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    row-gap: 10px;
+    column-gap: 100px;
     max-height: 160px;
     flex-wrap: wrap;
+    /* background-color: #806868; */
 }
 .details-text p{
     margin: 0;
+}
+@media(max-width: 850px){
+    .country-details{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .details-text{
+        /* display: block; */
+        max-height: unset;
+    }
+    .country-details img{
+        width: 60%;
+    }
+    /* .details-text-container{
+        align-items: start;
+    } */
 }
