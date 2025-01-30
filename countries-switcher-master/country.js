@@ -23,7 +23,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
         subRegion.innerHTML = data[0].subregion
         capital.innerHTML = data[0].capital[0]
         topLevelDomain.innerHTML = data[0].tld[0]
-        currencies.innerHTML = data[0].currencies.LYD
+        currencies.innerHTML = Object.values(data[0].currencies.LYD)[0].common
         // languages.innerHTML = Object.values(data[0].name.nativeName)[0].common
         // console.log();
         
