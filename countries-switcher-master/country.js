@@ -18,12 +18,12 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
     countrynameh1.innerText = data[0].name.common
     if(data[0].name.nativeName){
         nativeName.innerHTML = Object.values(data[0].name.nativeName)[0].common
-        population.innerHTML = data[0].population
+        population.innerHTML = new Intl.NumberFormat('en-IN').format(data[0].population)
         region.innerHTML = data[0].region
         subRegion.innerHTML = data[0].subregion
         capital.innerHTML = data[0].capital[0]
-        topLevelDomain.innerHTML = data[0].tld[0]
-        currencies.innerHTML = Object.values(data[0].currencies.LYD)[0].common
+        topLevelDomain.innerHTML = data[0].tld
+        // currencies.innerHTML = Object.values(data[0].currencies)
         // languages.innerHTML = Object.values(data[0].name.nativeName)[0].common
         // console.log();
         
