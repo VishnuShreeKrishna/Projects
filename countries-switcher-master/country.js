@@ -13,23 +13,27 @@ const languages = document.querySelector('.languages')
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 .then((res)=> res.json())
 .then((data)=>{
-    console.log(data[0])
+    console.log(typeof data.map((country) => country))
     flagImg.src = data[0].flags.svg
     countrynameh1.innerText = data[0].name.common
-    if(data[0].name.nativeName){
-        nativeName.innerHTML = Object.values(data[0].name.nativeName)[0].common
+        if(data[0].name.nativeName){
+           nativeName.innerHTML = Object.values(data[0].name.nativeName)[0].common
+        }else{
+            nativeName.innerHTML = data[0].name.common
+        }
         population.innerHTML = new Intl.NumberFormat('en-IN').format(data[0].population)
         region.innerHTML = data[0].region
         subRegion.innerHTML = data[0].subregion
-        capital.innerHTML = data[0].capital[0]
-        topLevelDomain.innerHTML = data[0].tld
-        // currencies.innerHTML = Object.values(data[0].currencies)
-        // languages.innerHTML = Object.values(data[0].name.nativeName)[0].common
-        // console.log();
-        
-        
+        capital.innerHTML = data[0].capital?.[0]
+        topLevelDomain.innerHTML = data[0].tld.join(', ')
+        if(data[0].currencies){
+            currencies.innerHTML = Object.values(data[0].currencies).map((currency)=>currency.name).join(', ')
+        }
+        if(data[0].languages){
+            languages.innerHTML = Object.values(data[0].languages).join(', ')
+        }
     }
-})
+)
 
 
 
