@@ -37,7 +37,9 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
             languages.innerHTML = Object.values(data[0].languages).join(', ')
         }
         if(data[0].borders){
-
+            data[0].borders.forEach((border) => {
+                
+            });
         }
     }
 )
