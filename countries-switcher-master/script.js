@@ -4,6 +4,7 @@ fetch('https://restcountries.com/v3.1/all')
     .then((data)=>{
         data.forEach((country) => {
             // console.log(`${country.name.common}, => ${country.capital} `);
+            console.log(country.borders);
             const Countrycardanchor = document.createElement(`a`);
             Countrycardanchor.href = `/countries-switcher-master/country.html?name=${country.name.common}`
             const population = new Intl.NumberFormat('en-IN').format(`${country.population}`);
