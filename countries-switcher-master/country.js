@@ -38,9 +38,12 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
         }
         if(data[0].borders){
             data[0].borders.forEach((border) => {
-                
+                fetch(`https://restcountries.com/v3.1/alpha/${border}`)
+                .then((resp)=>resp.json())
+                .then(([contryborder])=>{console.log(contryborder)})
             });
         }
+        
     }
 )
 
