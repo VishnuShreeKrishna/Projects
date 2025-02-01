@@ -9,6 +9,7 @@ const capital = document.querySelector('.capital')
 const topLevelDomain = document.querySelector('.topLevelDomain')
 const currencies = document.querySelector('.currencies')
 const languages = document.querySelector('.languages')
+const borderCountries = document.querySelector(`.border-countries`)
 
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 .then((res)=> res.json())
@@ -40,8 +41,13 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
             data[0].borders.forEach((border) => {
                 fetch(`https://restcountries.com/v3.1/alpha/${border}`)
                 .then((resp)=>resp.json())
-                .then(([contryborder])=>{console.log(contryborder)})
-            });
+                .then(([countryborder])=>{
+                console.log(countryborder)
+                const borderCountryTag = document.createElement('a')
+                borderCountryTag.innerText = countryborder.name.common
+                borderCountries.append(borderCountryTag)
+                })
+            })
         }
         
     }
