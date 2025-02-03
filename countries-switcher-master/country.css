@@ -29,14 +29,16 @@
     margin: 0;
 }
 .border-countries{
-    margin-top: 55px;
+    margin-top: 5%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 7px;
 }
 .border-countries a{
     padding: 4px 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.321);
-    margin-inline: 5px;
-    /* display: flex; */
 }
 @media(max-width: 850px){
     .back-button{
@@ -55,9 +57,10 @@
     .country-details img{
         width: 60%;
     }
-    /* .details-text-container{
-        align-items: start;
-    } */
+    .border-countries{
+        margin-top: 55px;
+        display: block;
+    }
     .border-countries a{
         display: flex;
         margin-top: 6%;

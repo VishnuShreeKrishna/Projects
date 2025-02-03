@@ -14,7 +14,7 @@ const borderCountries = document.querySelector(`.border-countries`)
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 .then((res)=> res.json())
 .then((data)=>{
-    console.log(data[0]);
+    console.log(data[0].name.common);
     flagImg.src = data[0].flags.svg
     countrynameh1.innerText = data[0].name.common
         if(data[0].name.nativeName){
@@ -43,12 +43,15 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
                 fetch(`https://restcountries.com/v3.1/alpha/${border}`)
                 .then((resp)=>resp.json())
                 .then(([countryborder])=>{
-                console.log(countryborder)
+                // console.log(countryborder)
                 const borderCountryTag = document.createElement('a')
                 borderCountryTag.innerText = countryborder.name.common
+                borderCountryTag.href = `country.html?name=${countryborder.name.common}`
                 borderCountries.append(borderCountryTag)
                 })
             })
+        }else{
+            // borderCountryTag.innerText = `${data[0].name.common} has No Border Country`
         }
         
     }
