@@ -5,6 +5,15 @@ body{
     background-color: #f7d8a4;
     font-family: cursive;
 }
+button{
+    box-shadow: 0 0px 4px 0px #00000015;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-style: none;
+    margin-top: 3%;
+}
 .popup-container{
     position: fixed;
     inset: 0;
