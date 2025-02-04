@@ -30,20 +30,24 @@ main{
 .back-button{
     cursor: pointer;
 }
-a{
-    cursor: pointer;
-    text-decoration-line: none;
-    color: inherit;
+.search-filter-container{
+    margin-top: 14px;
+    margin-bottom: 30px;
 }
 .countries-container{
     max-width: 1200px;
-    margin-inline: auto;
+    /* margin-inline: auto; */
     margin-top: 15px;
     display: flex;
     gap: 18px;
     flex-wrap: wrap;
     justify-content: space-between;
     scroll-behavior: smooth;
+}
+a{
+    cursor: pointer;
+    text-decoration-line: none;
+    color: inherit;
 }
 .country-card{
     padding: 5px;
