@@ -45,10 +45,12 @@ function renderCountry(data){
 searchinput.addEventListener(`input`, (eve)=>{
     // console.log(eve.target.value);
     // console.log(allcountriesdata);
-    allcountriesdata.filter((country)=>{
-        const filter = country.name.common.toLowerCase().includes(eve.target.value.toLowerCase())
-        
+    const filteredcuntry = allcountriesdata.filter((country)=>{
+        return country.name.common.toLowerCase().includes(eve.target.value.toLowerCase())
     })
+    // console.log(filteredcuntry);
+    
+    renderCountry(filteredcuntry);
     
 })
 
