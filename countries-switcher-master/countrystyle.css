@@ -2,9 +2,19 @@
     box-sizing: border-box;
 }
 body{
+    --background-color: white;
+    --text-color: black;
+    --elements-color: white;
     margin: 0;
     font-family: Nunito, sans-serif;
-    /* background-color: #cfc8c8; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: #ffffff;
+    --elements-color: hsl(209, 23%, 22%);
 }
 .title{
     font-weight: 700;
@@ -13,11 +23,14 @@ body{
     position: sticky;
     top: 0;
     z-index: 2;
-    background-color: white;
+    background-color: var(--elements-color);
     box-shadow: 0px 4px 14px #0000004d;
 }
 .fa-solid{
     padding: 6px;
+    cursor: pointer;
+}
+.theme-change{
     cursor: pointer;
 }
 .header-content{
@@ -33,6 +46,8 @@ main{
 }
 .back-button{
     cursor: pointer;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 .search-filter-container{
     max-width: 1200px;
@@ -50,6 +65,8 @@ main{
     padding-left: 24px;
     color: rgba(163, 163, 163, 0.655);
     overflow: hidden;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 .search-container input{
     border: none;
@@ -58,6 +75,8 @@ main{
     padding-block: 15px;
     width: 91%;
     height: 100%;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 .filter-by-region{
     width: 200px;
@@ -67,6 +86,8 @@ main{
     border: none;
     box-shadow: 0px 4px 10px #00000040;
     border-radius: 5px;
+    background-color: var(--elements-color);
+    color: var(--text-color);
 }
 .countries-container{
     margin-inline: auto;
@@ -90,6 +111,7 @@ a{
     border-radius: 10px;
     box-shadow: 0 0 10px #0000004d;
     overflow: hidden;
+    background-color: var(--elements-color);
     transition: all 0.3s ease-in-out;
 }
 .country-card:hover{

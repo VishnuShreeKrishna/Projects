@@ -2,7 +2,7 @@ const countriesContainer = document.querySelector('.countries-container');
 const filterbyregion = document.querySelector('.filter-by-region')
 const searchinput = document.querySelector(`.search-container input`)
 let allcountriesdata;
-
+const themechanger = document.querySelector(`.theme-change`)
 fetch('https://restcountries.com/v3.1/all')
     .then((res)=>res.json())
     .then((data)=>{
@@ -53,7 +53,9 @@ searchinput.addEventListener(`input`, (eve)=>{
     renderCountry(filteredcuntry);
     
 })
-
+themechanger.addEventListener(`click`, ()=>{
+    document.body.classList.toggle('dark')
+})
 
 
 
