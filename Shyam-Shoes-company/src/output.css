@@ -6,9 +6,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
     --default-font-variation-settings: var(
@@ -171,8 +172,14 @@
   .relative {
     position: relative;
   }
+  .-mt-8 {
+    margin-top: calc(var(--spacing) * -8);
+  }
   .block {
     display: block;
+  }
+  .flex {
+    display: flex;
   }
   .inline-flex {
     display: inline-flex;
@@ -183,12 +190,6 @@
   .table {
     display: table;
   }
-  .w-32 {
-    width: calc(var(--spacing) * 32);
-  }
-  .w-\[130\] {
-    width: 130;
-  }
   .w-\[130px\] {
     width: 130px;
   }
@@ -198,6 +199,12 @@
   .resize {
     resize: both;
   }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -205,11 +212,12 @@
   .bg-\[\#000000\] {
     background-color: #000000;
   }
-  .bg-\[\#00000040\] {
-    background-color: #00000040;
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
-  .bg-black {
-    background-color: var(--color-black);
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .text-white {
     color: var(--color-white);
