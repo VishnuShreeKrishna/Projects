@@ -7,7 +7,7 @@ body{
 }
 .fa-solid{
     width: 100%;
-    color: #ffffff;
+    color: white;
     cursor: pointer;
 }
 .navbutton{
@@ -24,6 +24,8 @@ body{
 .navbutton:hover{
     transform: scale(1.05);
     box-shadow: 5px 8px 15px #f9f9f9f2;
+    color: black;
+    background-color: #fff;
 }
 nav{
     display: flex;
@@ -38,10 +40,12 @@ nav a{
 }
 .radhakrishna{
     height: 80vh;
-    
+}
+.radhakrishna:hover{
+    filter: drop-shadow(0px 0px 8px #f9f9f9f2);
+    rotate: 20deg;
 }
 .centre{
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -56,14 +60,14 @@ nav a{
     align-items: center;
     font-size: large;
     font-weight: bolder;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     border-radius: 70%;
-    box-shadow: 5px 5px #00000049;
+    box-shadow: 2px 4px 4px 2px #00000049;
 
 }
 .allCentre:hover{
     color: white;
-    box-shadow: 5px 8px 15px #f9f9f9f2;
+    box-shadow: 5px 8px 25px #f9f9f9f2;
 }
 #banner{
     padding: 10px;
@@ -72,7 +76,7 @@ nav a{
     padding: 20px;
     width: 20vh;
     border-radius: 10px;
-    color: white;
+    /* color: white; */
     box-shadow: 0px 4px 5px #000000a2;
 }
 #clock:hover{
