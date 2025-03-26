@@ -196,6 +196,9 @@
   .top-80 {
     top: calc(var(--spacing) * 80);
   }
+  .top-96 {
+    top: calc(var(--spacing) * 96);
+  }
   .right-5 {
     right: calc(var(--spacing) * 5);
   }
@@ -356,9 +359,66 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .max-xl\:top-20 {
+    @media (width < 80rem) {
+      top: calc(var(--spacing) * 20);
+    }
+  }
+  .max-xl\:right-0 {
+    @media (width < 80rem) {
+      right: calc(var(--spacing) * 0);
+    }
+  }
+  .max-xl\:right-14 {
+    @media (width < 80rem) {
+      right: calc(var(--spacing) * 14);
+    }
+  }
+  .max-xl\:right-16 {
+    @media (width < 80rem) {
+      right: calc(var(--spacing) * 16);
+    }
+  }
+  .max-xl\:mt-0 {
+    @media (width < 80rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .max-xl\:mt-10 {
+    @media (width < 80rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
   .max-xl\:mt-16 {
     @media (width < 80rem) {
       margin-top: calc(var(--spacing) * 16);
+    }
+  }
+  .max-xl\:mt-20 {
+    @media (width < 80rem) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
+  .max-xl\:-ml-10 {
+    @media (width < 80rem) {
+      margin-left: calc(var(--spacing) * -10);
+    }
+  }
+  .max-xl\:ml-0 {
+    @media (width < 80rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .max-xl\:translate-y-10 {
+    @media (width < 80rem) {
+      --tw-translate-y: calc(var(--spacing) * 10);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .max-xl\:translate-y-40 {
+    @media (width < 80rem) {
+      --tw-translate-y: calc(var(--spacing) * 40);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
   .max-xl\:rotate-12 {
@@ -384,6 +444,36 @@
   .max-xl\:rotate-55 {
     @media (width < 80rem) {
       rotate: 55deg;
+    }
+  }
+  .max-xl\:rotate-90 {
+    @media (width < 80rem) {
+      rotate: 90deg;
+    }
+  }
+  .max-xl\:rotate-100 {
+    @media (width < 80rem) {
+      rotate: 100deg;
+    }
+  }
+  .max-xl\:rotate-120 {
+    @media (width < 80rem) {
+      rotate: 120deg;
+    }
+  }
+  .max-xl\:rotate-125 {
+    @media (width < 80rem) {
+      rotate: 125deg;
+    }
+  }
+  .max-xl\:rotate-130 {
+    @media (width < 80rem) {
+      rotate: 130deg;
+    }
+  }
+  .max-xl\:pt-20 {
+    @media (width < 80rem) {
+      padding-top: calc(var(--spacing) * 20);
     }
   }
   .max-xl\:pt-40 {
@@ -518,6 +608,16 @@
   .xl\:pt-0 {
     @media (width >= 80rem) {
       padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:pt-10 {
+    @media (width >= 80rem) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:pt-16 {
+    @media (width >= 80rem) {
+      padding-top: calc(var(--spacing) * 16);
     }
   }
 }
