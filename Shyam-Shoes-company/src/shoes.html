@@ -1,55 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
     <title>The Shyam Shoe Company</title>
-</head>
-<body class="bg-[#000000] text-white">
-        <header class="section-container flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%]">
-            <a href="/index.html">
-                <img class="w-[70px] md:w-[130px]" src="./images/shoe-logo.png" alt="shoe-logo">
-                <p class="text-1xl -mt-4 md:text-sm md:-mt-8">The Shoe Company</p>
-            </a>
-            <nav class="hidden md:block space-x-6 lg:space-x-8 lg:text-2xl">
-                <a href="#hero">Home</a>
-                <a href="#how-it-works">How It Works?</a>
-                <a href="#about">About</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact">Contact Us</a>
-            </nav>
-            <button class="md:hidden sm:block text-5xl ">&#9776;</button>
-        </header>
-        <section id="hero" class="bg-[url(./images/background-road1.png)] bg-cover md:bg-contain bg-no-repeat bg-right max-w-[1440px] mx-auto">
-            <div class="flex flex-col md:flex-row md:items-center justify-between section-container pt-30">
-                <h1 class="text-2xl md:text-7xl font-bold leading-[30px] md:leading-[70px]">THE<br>SHOE<br>COMPANY</h1>
-                <div>
-                    <img class="w-full max-w-xl" src="./images/white-shoe-image1.png" alt="Shoe Image">
-                </div>
-            </div>
-        </section>
-        <section id="how-it-works" class="section-container pt-20">
-            <h2 class="text-center text-3xl font-bold max-w-md mx-auto">Have they finally made the perfect workout shoe?</h2>
-            <div class="max-w-2xl mx-auto max-xl:mt-16 max-xl:pt-40 xl:pt-16 relative">
-                <img class="w-full max-w-lg max-xl:rotate-12 xl:rotate-0 max-xl:pl-24" src="./images/how-it-works-image 1.png" alt="shoe">
-                <div class="max-w-[200px] absolute -top-4 xl:-translate-x-full">
-                    <h3 class="text-2xl font-bold">THE HEEL</h3>
-                    <p class="text-lg">The heel is well-built, has appropriate elevation and is not too rigid.</p>
-                    <img class="xl:ml-auto max-w-40 xl:max-w-30 max-xl:rotate-45" src="./images/arrow-1.png" alt="arrow-1">
-                </div>
-                <div class="max-w-[200px] absolute top-8 right-5 max-xl:right-14">
-                    <img class="max-w-30 -ml-32 max-xl:-ml-10 max-xl:translate-y-40 max-xl:rotate-130" src="./images/arrow-2.png" alt="arrow-2">
-                    <h3 class="text-2xl font-bold -mt-20">THE FRONT</h3>
-                    <p class="text-lg">The front is comfortable and adjusts well to the shape of your foot.</p>
-                </div>
-                <div class="max-w-[200px] absolute top-96 ">
-                    <img class="max-w-30 ml-34" src="./images/arrow-3.png" alt="arrow-3">
-                    <h3 class="text-2xl font-bold -mt-20">TRACTION</h3>
-                    <p class="text-lg">The shoe has good traction and doesn't slip easily.</p>
-                </div>
-            </div>
-            
-        </section>
-</body>
+  </head>
+  <body class="bg-[#000000] text-white">
+    <header
+      class="section-container flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%] bg-black/90 backdrop-blur-sm"
+    >
+      <a href="/index.html">
+        <img
+          class="w-[70px] md:w-[130px]"
+          src="./images/shoe-logo.png"
+          alt="shoe-logo"
+        />
+        <p class="text-1xl -mt-4 md:text-sm md:-mt-8">The Shoe Company</p>
+      </a>
+      <nav class="hidden md:block space-x-6 lg:space-x-8 lg:text-2xl">
+        <a href="#hero">Home</a>
+        <a href="#how-it-works">How It Works?</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <button class="md:hidden sm:block text-5xl">&#9776;</button>
+    </header>
+    <section
+      id="hero"
+      class="bg-[url(./images/background-road1.png)] bg-cover md:bg-contain bg-no-repeat bg-right max-w-[1440px] mx-auto"
+    >
+      <div
+        class="flex flex-col md:flex-row md:items-center justify-between section-container pt-30"
+      >
+        <h1
+          class="text-2xl md:text-7xl font-bold leading-[30px] md:leading-[70px]"
+        >
+          THE<br />SHOE<br />COMPANY
+        </h1>
+        <div>
+          <img
+            class="w-full max-w-xl"
+            src="./images/white-shoe-image1.png"
+            alt="Shoe Image"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works" class="section-container pt-20">
+      <h2 class="text-center max-sm:text-lg text-3xl font-bold max-w-md mx-auto">
+        Have they finally made the perfect workout shoe?
+      </h2>
+      <div
+        class="max-w-2xl mx-auto max-xl:mt-16 max-xl:pt-40 xl:pt-16 relative"
+      >
+        <img
+          class="max-sm:w-[50%] w-full max-w-lg max-sm:rotate-30 max-xl:rotate-12 xl:rotate-0 max-sm:pl-0 max-xl:pl-24"
+          src="./images/how-it-works-image 1.png"
+          alt="shoe"
+        />
+        <div class="max-w-[200px] absolute -top-4 xl:-translate-x-full">
+          <h3 class="max-sm:text-[18px] text-2xl font-bold">THE HEEL</h3>
+          <p class="max-sm:text-sm text-lg">
+            The heel is well-built, has appropriate elevation and is not too
+            rigid.
+          </p>
+          <img
+            class="xl:ml-auto max-sm:max-w-[40%] max-w-40 xl:max-w-30 max-sm:rotate-50 max-xl:rotate-45"
+            src="./images/arrow-1.png"
+            alt="arrow-1"
+          />
+        </div>
+        <div class="max-w-[200px] absolute max-sm:top-12 top-8 right-5 max-sm:right-0 max-xl:right-14">
+          <img
+            class="max-w-30 -ml-32 max-sm:max-w-[40%] max-sm:-ml-0 max-xl:-ml-10 max-sm:translate-y-25 max-xl:translate-y-40 max-xl:rotate-130"
+            src="./images/arrow-2.png"
+            alt="arrow-2"
+          />
+          <h3 class="max-sm:text-[18px] text-2xl font-bold -mt-20">THE FRONT</h3>
+          <p class="max-sm:text-sm text-lg">
+            The front is comfortable and adjusts well to the shape of your foot.
+          </p>
+        </div>
+        <div class="max-w-[200px] absolute max-sm:top-65 top-96">
+          <img
+            class="max-sm:max-w-[40%] max-w-30 max-sm:ml-0 max-sm:mb-20 ml-34 max-sm:rotate-30"
+            src="./images/arrow-3.png"
+            alt="arrow-3"
+          />
+          <h3 class="max-sm:text-[18px] text-2xl font-bold -mt-20">TRACTION</h3>
+          <p class="max-sm:max-w-[100px] max-sm:text-sm text-lg">
+            The shoe has good traction and doesn't slip easily.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
