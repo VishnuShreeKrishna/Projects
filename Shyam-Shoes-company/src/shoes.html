@@ -193,8 +193,11 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="section-container flex items-center justify-between">
-      <div>
+    <section
+      id="contact"
+      class="section-container flex max-[1020px]:flex-col items-center justify-between pt-[5%] scroll-mt-28"
+    >
+      <div class="mb-10 lg:mb-0 self-start sm:self-center">
         <h2 class="max-md:text-3xl text-6xl font-bold">Contact Us</h2>
         <p class="max-w-[160px] my-8">
           THE SHOE COMPANY, Dallas, Texas, USA +1 5590 1120 9910
@@ -214,8 +217,9 @@
           /></a>
         </div>
       </div>
-      <div>
+      <div class="w-full">
         <iframe
+          class="max-w-xl w-full lg:ml-auto max-lg:mx-auto"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7034.027264344652!2d77.69815215869143!3d28.17650087462005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cb25279b415a3%3A0x63a60d74d93281e1!2z4KS24KWN4KSv4KS-4KSuIOCksOClh-CkoeClgOCkruClh-CkoSDgpJfgpL7gpLDgpK7gpYfgpKjgpY3gpJ_gpLg!5e0!3m2!1sen!2sin!4v1744257363491!5m2!1sen!2sin"
           width="600"
           height="600"
@@ -226,5 +230,18 @@
         ></iframe>
       </div>
     </section>
+    <footer class="section-container">
+      <div class="flex items-center justify-center">
+        <span>
+          <img
+            class="w-14 md:w-20"
+            src="./images/shoe-logo.png"
+            alt="shoe-logo"
+          />
+          <p class="max-lg:text-[8px] lg:text-[10px] md:-mt-4 max-lg:-mt-4">The Shoe Company</p>
+        </span>
+        <p class="max-sm:text-[8px] text-sm">Made with ❤️ By Vishnu Sharma</p>
+      </div>
+    </footer>
   </body>
 </html>
