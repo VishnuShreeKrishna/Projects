@@ -24,7 +24,7 @@ function renderCountry(data){
             // console.log(`${country.name.common}, => ${country.capital} `);
             // console.log(country.borders);
             const Countrycardanchor = document.createElement(`a`);
-            Countrycardanchor.href = `/countries-switcher-master/country.html?name=${country.name.common}`
+            Countrycardanchor.href = `/Projects/countries-switcher-master/country.html?name=${country.name.common}`
             const population = new Intl.NumberFormat('en-IN').format(`${country.population}`);
             Countrycardanchor.innerHTML = `
                 <div class="country-card">

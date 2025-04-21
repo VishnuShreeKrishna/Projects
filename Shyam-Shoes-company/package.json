@@ -7,5 +7,16 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4"
-  }
+  },
+  "name": "shyam-shoes-company",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "tailwind-minify": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
